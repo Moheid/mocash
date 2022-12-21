@@ -4,7 +4,7 @@ import plotly.express as px
 import pandas as pd
 
 #Import data 
-df = pd.read_csv("data/mocdash.csv")
+df = pd.read_csv("mocdash.csv")
 fig = px.bar(df, x='Age', y='Likes')
 app = dash.Dash()
 server = app.server
