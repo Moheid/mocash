@@ -4,7 +4,7 @@ import plotly.express as px
 import pandas as pd
 from jupyter_dash import JupyterDash
 
-df = pd.read_csv("data/mocdash.csv")
+df = pd.read_csv("mocdash.csv")
 
 fig1 = px.scatter(df, x="Likes", y="Service", color="Gender",
                  size='Likes', hover_data=['Gender'])
